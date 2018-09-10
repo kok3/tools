@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emps>
+    <emp id="0" sex="male" type1="pvr2" type2="pvrtc4">
+        <empno value="0000">7369</empno>
+        <ename>111111111111SMITH</ename>
+        <job>CLERK</job>
+    </emp>
+    <emp id="1" sex="female" type1="pvr2" type2="png">
+        <empno value="1111">7499</empno>
+        <ename>22222222222222ALLEN</ename>
+        <job>SALESMAN</job>
+    </emp>
+    <emp id="2" type1="pvr2" type2="tga">
+        <empno value="2222">7566</empno>
+        <ename>3333333333333JONES</ename>
+        <job>MANAGER</job>
+    </emp>
+    <emp id="3" type1="pvr2" type2="etc1">
+        <empno>75662</empno>
+        <ename>44444444444JONES2</ename>
+        <job>MANAGER2</job>
+        <age>33</age>
+    </emp>
+</emps>
