@@ -1,30 +1,33 @@
 #xmlTest.py
 
 import xml.dom.minidom
+import os
+import re
+import sys
 
-filename = "xmlTest.xml"
-###1.DOM(Document Object Model)
-print "1.DOM"
+filename = "IOSConfig.xml"
+
 dom = xml.dom.minidom.parse(filename)
-root = dom.documentElement
 
-emplist = root.getElementsByTagName("emp")
+texturepacker = dom.documentElement
+
+cmdPath = texturepacker.getAttribute("cmdPath")
+pack = texturepacker.getElementsByTagName("pack")
+print ('@@@@pack.name:%s' % pack[0].getAttribute("name"))
+print ('@@@@pack.type:%s' % pack[0].getAttribute("type"))
+print ('@@@@pack.type2:%s' % pack[0].getAttribute("type2"))
+print ('@@@@pack.alphaRate:%s' % pack[0].getAttribute("alphaRate"))
+print ('@@@@pack.rgbRate:%s' % pack[0].getAttribute("rgbRate"))
+
+itemlist = pack[0].getElementsByTagName("item")
 num = 1
-for node in emplist:
-    print "*** emp node %d ***" % num
-    print node, node.toxml(), node.nodeName, node.getAttribute("id")
+for node in itemlist:
+    print ('@@@@name:%s' % node.getAttribute("name"))
+    print ('@@@@type:%s' % node.getAttribute("type"))
+    print ('@@@@type2:%s' % node.getAttribute("type2"))
+    print ('@@@@alphaRate:%s' % node.getAttribute("alphaRate"))
+    print ('@@@@rgbRate:%s' % node.getAttribute("rgbRate"))
 
-    print "*** empno node ***"
-    empnolist = node.getElementsByTagName("empno")
-    print empnolist[0].toxml(), empnolist[0].nodeName, empnolist[0].firstChild.data
+if raw_input("\r\n Press Any Key To Quit"):
+  pass
 
-    print "*** ename node ***"
-    enamelist = node.getElementsByTagName("ename")
-    print enamelist[0].toxml(), enamelist[0].nodeName, enamelist[0].firstChild.data
-
-    print "*** job node ***"
-    joblist = node.getElementsByTagName("job")
-    print joblist[0].toxml(), joblist[0].nodeName, joblist[0].firstChild.data
-
-    print 
-    num = num + 1
