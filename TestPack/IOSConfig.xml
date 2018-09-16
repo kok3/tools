@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TexturePacker cmdPath="c:\\TexturePacker.exe">
-	<pack src="F:\\body" dest="F:\\out" type="PCRTC4" alphaRate="60" rgbRate="60">
-		<item name="newcommon" type="pvr2" type2="pvrtc4" alphaRate="60" rgbRate="60">
-		</item>
-		<item name="newcommon2" type="pvr2" type2="pvrtc4" alphaRate="60" rgbRate="60">
-		</item>
+<TexturePacker cmdPath="TexturePacker.exe">
+	<pack src="./res_pvr" dest="./res_out" type="pvr2" type2="PVRTC4" alphaRate="60" rgbRate="60">
+		<item name="newcommon1" type="pvr2" type2="PVRTC4" alphaRate="60" rgbRate="60"/>
+		<item name="newcommon2" type="pvr2" type2="PVRTC4" alphaRate="60" rgbRate="60"/>
+		<item name="common1" type="pvr2" type2="PVRTC4" alphaRate="60" rgbRate="60"/>
+		<item name="common2" type="pvr2" type2="PVRTC4" alphaRate="60" rgbRate="60"/>
 	</pack>	
 </TexturePacker>
