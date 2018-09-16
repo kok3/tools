@@ -58,9 +58,9 @@ for i in range(len(layer1_dir_list)):
 						type2 = node.getAttribute("type2")
 						localtype = type1
 						localtype2 = type2
-				    	print ('@@@@special plistname:%s' % plistname)
-				    	print ('@@@@special type:%s' % localtype)
-				    	print ('@@@@special type2:%s' % localtype2)
+						print ('@@@@special plistname:%s' % plistname)
+						print ('@@@@special type:%s' % localtype)
+						print ('@@@@special type2:%s' % localtype2)
 
 				for fileName in os.listdir(layer2_dir):
 				    if re.match('[^.]+.png', fileName) is None:
