@@ -60,8 +60,7 @@ for i in range(len(layer1_dir_list)):
 		          " --opt RGBA4444" \
 		          " --allow-free-size" 
 		        print ('@@@@cmd:%s' % cmdtmp)
-  			os.system(cmdtmp)
-
+		        os.system(cmdtmp)
 
 # os.remove(rootdir + "/tmp.plist")
 
